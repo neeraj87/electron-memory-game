@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Memory Game</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+
+        nav {
+            background-color:#1565c0 ;
+        }
+
+        .page-footer {
+            background-color:#1565c0 ;
+        }
+
+        .grid-example {
+            border: 1px solid #eee;
+            margin: 7px 0;
+            margin-left: 0px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 28px;
+            background-color: #c0c0c0;
+            color: white;
+            padding: 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center"><img src="../assets/icons/png/icon.png" width="5%"> Memory Game</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div id="game-grid" class="card">
+                <div class="card-content">
+                    <div class="row">
+                        <div id="1" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="2" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="3" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="4" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="5" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="6" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="7" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="8" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="9" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="10" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="11" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="12" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="13" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="14" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="15" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="16" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="17" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="18" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="19" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="20" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="21" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="22" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="23" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="24" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="25" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="26" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="27" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="28" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="29" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="30" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="31" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="32" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="33" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="34" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="35" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                        <div id="36" class="col s1 grid-example">
+                            <span class="flow-text"></span>
+                        </div>
+                    </div>
+                    <div id="timer-div" class="row">
+                        <span id="timer-badge" class="badge col s4 offset-s4">0</span>
+                        <div class="progress">
+                            <div class="indeterminate"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="game-difficulty-select" class="row">
+                <div class="col s4">
+                    <p>
+                        <label>
+                            <input class="with-gap" name="difficulty" type="radio" value="easy" checked/>
+                            <span>Easy</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="col s4">
+                    <p>
+                        <label>
+                            <input class="with-gap" name="difficulty" type="radio" value="medium" />
+                            <span>Medium</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="col s4">
+                    <p>
+                        <label>
+                            <input class="with-gap" name="difficulty" type="radio" value="hard" />
+                            <span>Hard</span>
+                        </label>
+                    </p>
+                </div>
+                <button id="play" class="btn waves-effect waves-light col s4 offset-s4" type="button">Start</button>
+            </div>
+
+            <div id="game-reset" class="row">
+                <button id="reset" class="btn waves-effect waves-light red col s4 offset-s4">Reset</button>
+            </div>
+
+            <div class="row">
+                <h5 class="col s4 offset-s4">
+                    <span>
+                        <i class="material-icons">code</i>
+                    </span>by neeraj87
+                </h5>
+            </div>
+
+
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">How to Play</span>
+                            <p>
+                                On clicking the Start button the game will populate a 3 x 12 grid cells randomly with numbers from 1 to 10 (or 1 to 5 on Easy mode).
+                                The numbers will disappear after few seconds. You have to click the X in a cell where each number was in ascending order, so first click the X where 1 was placed, then click the X where 2 was placed and so on till you are done with all the numbers.
+                            </p>
+                            <p>Remember, you have to start with 1 and move on. Clicking a wrong cell will end the game.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script src="../js/main.js"></script>
+    </main>
+
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col s4">
+                    <a class="grey-text text-lighten-3" href="https://github.com/neeraj87/electron-memory-game" target="_blank">GitHub Repo</a>
+                </div>
+                <div class="col s4">
+                    <a class="grey-text text-lighten-3" href="https://www.dropbox.com/sh/xk2x2qz01miw249/AAAVB6qqI-yAG_oejaW_eRi9a?dl=0" target="_blank">Mac App</a>
+                </div>
+                <div class="col s4">
+                    <a class="grey-text text-lighten-3" href="https://www.dropbox.com/sh/asovpflpc5orwez/AABgWSxdlCcLV170wPLkh4Exa?dl=0" target="_blank">Windows App</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

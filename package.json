@@ -1,0 +1,29 @@
+{
+  "name": "electron-memory-game",
+  "version": "1.0.0",
+  "description": "Electron memory game",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "electron-packager . ElectronMemoryGame --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . ElectronMemoryGame --overwrite --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds",
+    "package-linux": "electron-packager . ElectronMemoryGame --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/icon.png --prune=true --out=release-builds"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neeraj87/electron-memory-game.git"
+  },
+  "author": "Neeraj Jadhav",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neeraj87/electron-memory-game/issues"
+  },
+  "homepage": "https://github.com/neeraj87/electron-memory-game#readme",
+  "dependencies": {
+    "electron": "^2.0.4",
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "electron-packager": "^12.1.0"
+  }
+}

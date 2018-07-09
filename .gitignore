@@ -59,3 +59,6 @@ typings/
 
 # next.js build output
 .next
+
+#skip the release builds
+release-builds
