@@ -21,7 +21,7 @@
   "homepage": "https://github.com/neeraj87/electron-memory-game#readme",
   "dependencies": {
     "electron": "^2.0.8",
-    "jquery": "^3.4.0"
+    "jquery": "^3.5.0"
   },
   "devDependencies": {
     "electron-packager": "^12.1.0"
